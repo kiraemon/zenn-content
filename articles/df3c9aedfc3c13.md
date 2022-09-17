@@ -41,7 +41,9 @@ C++バージョンは C++17 を予定しています。
 - [Docker Hub](https://hub.docker.com/)
   - Docker CE でも可能です。
 
-## 拡張機能(Extension)のインストール
+## コンテナ立ち上げ
+
+### 拡張機能(Extension)のインストール
 
 インストールが終わりましたら VS Code を起動します。
 
@@ -131,7 +133,7 @@ clang-format version 10.0.0-4ubuntu1
 
 ![](/images/df3c9aedfc3c13/7.png)
 
-### 動作確認
+## 動作確認
 
 ここまでで一旦簡単に動作確認してみましょう。
 同階層に`main.cc`を作成し、Hello, world してみます。
