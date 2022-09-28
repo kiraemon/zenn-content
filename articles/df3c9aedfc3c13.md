@@ -130,6 +130,7 @@ clang-format version 10.0.0-4ubuntu1
 ```
 
 バージョン確認が終わりましたら、Microsoft が公式で用意してくれている VS Code での C++開発で有用な拡張機能パックをコンテナ側にインストールします。
+ここで拡張機能を右クリックし、`Add to devcontainer.json`しておくと、環境を作り直しても`devcontainer.json`さえあれば自動でインストールされるためオススメです。
 
 ![](/images/df3c9aedfc3c13/7.png)
 
@@ -150,3 +151,6 @@ Hello, world
 
 ここまででイメージ図の環境は構築できました。
 次回、本環境をベースとして CMake によるプロジェクト作成、clang-format によるフォーマット設定を行います。
+
+↓ 次回
+https://zenn.dev/kiraemon/articles/ce8ca63f1a7a58
