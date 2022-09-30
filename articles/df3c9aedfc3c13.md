@@ -1,6 +1,6 @@
 ---
-title: "VSCodeでモダン風C++開発環境構築 #1"
-emoji: "🐕"
+title: "VSCodeでモダンなC++開発環境構築(Remote Containers編)"
+emoji: "📦"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Cpp", "docker", "VSCode", "clang", "gxx"]
 published: true
@@ -9,7 +9,9 @@ published: true
 # 概要
 
 初投稿です。普段 C++案件に関わっているので、
-VSCode(Visual Studio Code) + Remote Containers でモダン風 C++開発環境構築してみます。
+VSCode(Visual Studio Code) + Remote Containers でモダンな C++開発環境構築してみます。
+
+できるだけ丁寧な説明を心がけますので、分かりづらい点あればご指摘ください。
 
 # 目標
 
