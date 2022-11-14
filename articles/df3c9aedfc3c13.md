@@ -1,5 +1,5 @@
 ---
-title: "VSCodeでモダンなC++開発環境構築(Remote Containers編)"
+title: "VSCodeでモダンなC++開発環境構築(Dev Containers編)"
 emoji: "📦"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Cpp", "docker", "VSCode", "clang", "gxx"]
@@ -9,9 +9,14 @@ published: true
 # 概要
 
 初投稿です。普段 C++案件に関わっているので、
-VSCode(Visual Studio Code) + Remote Containers でモダンな C++開発環境構築してみます。
+VSCode(Visual Studio Code) + Dev Containers でモダンな C++開発環境構築してみます。
 
 できるだけ丁寧な説明を心がけますので、分かりづらい点あればご指摘ください。
+
+:::message
+2022 年 10 月より Remote Containers は Dev Containers に名称が変更されました。
+以下、適宜 Remote Containers を Dev Containers に読み替えていただけますようお願いいたします。
+:::
 
 # 目標
 
@@ -88,10 +93,19 @@ RUN apt install -y wget \
 - ビルド支援：cmake
 - コード管理：git
 - フォーマッタ：clang-format
-- (一応)ダウンローダー：wget
+- ダウンローダー：wget
 
 タイムゾーンの設定は以下を参考にさせて頂きました。ありがとうございます。
 [[Docker] build tzdata タイムゾーン選択回避方法(ubuntu)](https://sleepless-se.net/2018/07/31/docker-build-tzdata-ubuntu/)
+
+:::message
+2021 年 12 月より C++静的解析ツールである clang-tidy は、以降導入する拡張の "C/C++(cpptools)" に含まれるようになりました。
+よって、個別のインストールは不要となります。
+[Visual Studio Code C++ December 2021 Update: clang-tidy](https://devblogs.microsoft.com/cppblog/visual-studio-code-c-december-2021-update-clang-tidy/)
+
+また、clang-format も前述の "C/C++(cpptools)" に含まれておりますので、
+あえてバージョンを選びたい場合で無ければ不要ですが、今回はシステム側にインストールしています。
+:::
 
 ### コンテナ立ち上げ
 
